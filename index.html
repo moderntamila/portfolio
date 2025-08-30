@@ -1,202 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #f5f5f5;
-      text-align: center;
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-    .gallery img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-  </style>
-</head>
-<body>
-  <h1>🌿 My Portfolio</h1>
-
-  <div class="gallery" id="gallery"></div>
-
-  <script>
-    const totalImages = 41; // number of images in your folder
-    const gallery = document.getElementById("gallery");
-
-    for (let i = 1; i <= totalImages; i++) {
-      const img = document.createElement("img");
-      img.src = `images/${i}.png`;  // image path
-      img.alt = `Page ${i}`;
-      gallery.appendChild(img);
-    }
-  </script>
-</body>
-</html> -->
-
-
-
-<!-- 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #f5f5f5;
-      text-align: center;
-    }
-    h1 {
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-    .gallery img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      /* Enhanced styles below */
-      background-color: white;
-      border: 2px dashed #ccc;
-    }
-  </style>
-</head>
-<body>
-  <h1>🌿 My Portfolio</h1>
-
-  <div class="gallery" id="gallery"></div>
-
-  <script>
-    const totalImages = 41; // number of images in your folder
-    const gallery = document.getElementById("gallery");
-
-    for (let i = 1; i <= totalImages; i++) {
-      const img = document.createElement("img");
-      img.src = `images/${i}.png`; // image path
-      img.alt = `Page ${i}`;
-      gallery.appendChild(img);
-    }
-  </script>
-</body>
-</html> -->
-
-
-
-
-
-
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    /* Page background with 3D gradient effect */
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #e0f7fa, #80deea, #4dd0e1, #26c6da);
-      background-size: 400% 400%;
-      animation: gradientBG 12s ease infinite;
-      text-align: center;
-    }
-
-    /* Gradient animation */
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    /* Title */
-    h1 {
-      margin: 0;
-      padding: 20px;
-      font-size: 2.5em;
-      color: #ffffff;
-      background: #004d40;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      border-bottom: 4px solid #00e676;
-    }
-
-    /* Gallery layout */
-    .gallery {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 25px;
-      padding: 30px;
-    }
-
-    /* Image styling */
-    .gallery img {
-      max-width: 85%;
-      height: auto;
-      border-radius: 12px;
-      border: 3px solid #ffffff;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    /* Hover effect */
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.5);
-    }
-  </style>
-</head>
-<body>
-  <h1>🌿 My Portfolio</h1>
-
-  <div class="gallery" id="gallery"></div>
-
-  <script>
-    const totalImages = 43; // update to your total images
-    const gallery = document.getElementById("gallery");
-
-    for (let i = 1; i <= totalImages; i++) {
-      const img = document.createElement("img");
-      img.src = `images/${i}.png`; // image path
-      img.alt = `Page ${i}`;
-      gallery.appendChild(img);
-    }
-  </script>
-</body>
-</html> -->
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -210,17 +11,21 @@
     <meta name="description" content="Tamilselvan Portfolio Gallery" />
     <style>
       :root {
-        /* Color palette (5 total) */
-        --primary: #14b8a6; /* teal-500 */
-        --accent: #f59e0b;  /* amber-500 */
-        --bg-dark: #0f172a; /* slate-900 */
+        /* Enhanced Color palette (5 total) */
+        --primary: #f97316; /* orange-500 */
+        --accent: #facc15; /* yellow-500 */
+        --bg-dark: #1e1b4b; /* violet-900 */
         --text-light: #e2e8f0; /* slate-200 */
         --white: #ffffff;
       }
 
       /* Reset and base */
-      * { box-sizing: border-box; }
-      html, body { height: 100%; }
+      * {
+        box-sizing: border-box;
+      }
+      html, body {
+        height: 100%;
+      }
       body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
@@ -229,6 +34,7 @@
         line-height: 1.5;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
       }
 
       /* 3D background canvas */
@@ -249,7 +55,9 @@
         padding: 24px 16px;
       }
 
+      /* Header and Social Icons */
       header {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -258,6 +66,25 @@
         text-align: center;
       }
 
+      .social-icons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        gap: 12px;
+        z-index: 10;
+      }
+      .social-icon {
+        color: var(--text-light);
+        font-size: 1.5rem;
+        transition: transform 0.2s, text-shadow 0.2s;
+        text-decoration: none;
+      }
+      .social-icon:hover {
+        transform: scale(1.1) translateY(-2px);
+        text-shadow: 0 0 10px var(--accent), 0 0 20px var(--primary);
+      }
+      
       h1 {
         margin: 0;
         font-size: clamp(1.75rem, 2.2vw + 1rem, 2.5rem);
@@ -265,7 +92,7 @@
         color: var(--white);
         letter-spacing: 0.3px;
         text-wrap: balance;
-        text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
       }
 
       .title-accent {
@@ -281,41 +108,40 @@
         opacity: 0.9;
       }
 
-      /* Gallery card wrapper (adds clear border and separation) */
+      /* Gallery card wrapper */
       .gallery-wrap {
         background: rgba(255, 255, 255, 0.06);
         border: 1px solid rgba(255, 255, 255, 0.12);
         border-radius: 16px;
         padding: 16px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(6px);
       }
 
-      /* Responsive gallery grid */
+      /* Responsive gallery layout to show images one-by-one */
       .gallery {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-      @media (min-width: 640px) {
-        .gallery { grid-template-columns: repeat(2, 1fr); }
-      }
-      @media (min-width: 1024px) {
-        .gallery { grid-template-columns: repeat(3, 1fr); }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
       }
 
       /* Individual image item */
       .item {
         background: var(--white);
-        border: 2px solid rgba(20, 184, 166, 0.25); /* primary, subtle */
+        border: 2px solid rgba(249, 115, 22, 0.25); /* primary, subtle */
         border-radius: 12px;
-        box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
         overflow: hidden;
-        transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+        transition: transform 200ms ease, box-shadow 200ms ease,
+          border-color 200ms ease;
+        max-width: 700px;
+        width: 100%;
+        cursor: pointer;
       }
       .item:hover {
         transform: translateY(-4px);
-        box-shadow: 0 10px 28px rgba(0,0,0,0.28);
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
         border-color: var(--primary);
       }
       .item img {
@@ -340,10 +166,136 @@
           transition: none !important;
         }
       }
+
+      /* --- Lightbox / Modal Styling --- */
+      .lightbox-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s;
+      }
+
+      .lightbox-overlay.active {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .lightbox-content-wrapper {
+        position: relative;
+        max-width: 90vw;
+        max-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .lightbox-content {
+        max-width: 90vw;
+        max-height: 80vh;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+      }
+
+      .lightbox-content img {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      .lightbox-nav {
+        color: var(--white);
+        font-size: 50px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        user-select: none;
+        padding: 0 20px;
+        transition: color 0.2s;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .lightbox-nav:hover {
+        color: var(--primary);
+      }
+
+      .lightbox-nav.prev {
+        left: 0;
+      }
+
+      .lightbox-nav.next {
+        right: 0;
+      }
+
+      .lightbox-close {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: var(--white);
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.2s;
+      }
+
+      .lightbox-close:hover,
+      .lightbox-close:focus {
+        color: var(--accent);
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* Action buttons styling */
+      .lightbox-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .action-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background-color: var(--primary);
+        color: var(--bg-dark);
+        font-weight: bold;
+        text-decoration: none;
+        white-space: nowrap;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s, transform 0.2s;
+        font-size: 0.9rem;
+      }
+      .action-btn:hover {
+        background-color: #e96306;
+        transform: translateY(-2px);
+      }
+
+      /* Social media icons from Font Awesome - you must include this in your HTML */
+      @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
     </style>
   </head>
   <body>
-     3D background 
     <canvas id="bg" aria-hidden="true"></canvas>
 
     <main class="container" role="main">
@@ -351,9 +303,15 @@
         <h1>🌿 Tamilselvan Portfolio</h1>
         <div class="title-accent" aria-hidden="true"></div>
         <p class="subtitle">Selected works and pages preview</p>
+        
+        <div class="social-icons">
+            <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tamilselvan-p-31918a243/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
       </header>
 
-       Gallery with clear border wrapper 
       <section class="gallery-wrap" aria-label="Portfolio Gallery">
         <div class="gallery" id="gallery"></div>
       </section>
@@ -361,12 +319,38 @@
       <footer>© <span id="year"></span> Tamilselvan. All rights reserved.</footer>
     </main>
 
+    <div id="lightbox" class="lightbox-overlay">
+      <span class="lightbox-close">&times;</span>
+      <div class="lightbox-content-wrapper">
+        <div class="lightbox-content">
+          <img id="lightbox-img" src="" alt="Enlarged Portfolio Image" />
+        </div>
+        <a class="lightbox-nav prev" id="prev-btn">&#10094;</a>
+        <a class="lightbox-nav next" id="next-btn">&#10095;</a>
+      </div>
+      <div class="lightbox-actions">
+        <a href="mailto:tamil@gmail.com" class="action-btn">
+          <span>✉️ Email</span>
+        </a>
+        <a href="Tamilselvan-P - CV.pdf" class="action-btn" target="_blank">
+          <span>📄 CV</span>
+        </a>
+        <a href="https://www.linkedin.com/in/tamilselvan-p-31918a243/" class="action-btn" target="_blank">
+          <span>👔 LinkedIn</span>
+        </a>
+        <a href="tel:6385660400" class="action-btn">
+          <span>📱 Call</span>
+        </a>
+      </div>
+    </div>
+
     <script>
       // ----------------------------
       // Portfolio images (1..41)
       // ----------------------------
       const totalImages = 41; // number of images in your folder
       const gallery = document.getElementById("gallery");
+      const images = [];
 
       for (let i = 1; i <= totalImages; i++) {
         const wrapper = document.createElement("div");
@@ -382,12 +366,79 @@
           wrapper.style.display = "none";
         };
 
+        // Store image objects for navigation
+        images.push({ src: img.src, alt: img.alt });
+
+        // Add click event listener for lightbox
+        img.addEventListener("click", () => openLightbox(i - 1)); // Pass index
+
         wrapper.appendChild(img);
         gallery.appendChild(wrapper);
       }
 
       // Footer year
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // ----------------------------
+      // Lightbox functionality
+      // ----------------------------
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxClose = document.querySelector(".lightbox-close");
+      const prevBtn = document.getElementById("prev-btn");
+      const nextBtn = document.getElementById("next-btn");
+      let currentIndex = 0;
+
+      function openLightbox(index) {
+        currentIndex = index;
+        updateLightboxImage();
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden"; // Prevent scrolling behind modal
+      }
+
+      function updateLightboxImage() {
+        const image = images[currentIndex];
+        lightboxImg.src = image.src;
+        lightboxImg.alt = image.alt;
+
+        // Hide/show nav buttons if at start/end
+        prevBtn.style.visibility = currentIndex === 0 ? "hidden" : "visible";
+        nextBtn.style.visibility = currentIndex === images.length - 1 ? "hidden" : "visible";
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = ""; // Restore scrolling
+      }
+
+      function navigate(direction) {
+        if (direction === 'prev' && currentIndex > 0) {
+          currentIndex--;
+        } else if (direction === 'next' && currentIndex < images.length - 1) {
+          currentIndex++;
+        }
+        updateLightboxImage();
+      }
+
+      // Event listeners for lightbox controls
+      lightboxClose.addEventListener("click", closeLightbox);
+      prevBtn.addEventListener("click", () => navigate('prev'));
+      nextBtn.addEventListener("click", () => navigate('next'));
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+      document.addEventListener("keydown", (e) => {
+        if (!lightbox.classList.contains("active")) return;
+        if (e.key === "Escape") {
+          closeLightbox();
+        } else if (e.key === "ArrowLeft") {
+          navigate('prev');
+        } else if (e.key === "ArrowRight") {
+          navigate('next');
+        }
+      });
 
       // ----------------------------
       // Lightweight 3D starfield background
@@ -402,9 +453,9 @@
         const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
         // Colors
-        const BG = getComputedStyle(document.documentElement).getPropertyValue("--bg-dark").trim() || "#0f172a";
-        const PRIMARY = getComputedStyle(document.documentElement).getPropertyValue("--primary").trim() || "#14b8a6";
-        const ACCENT = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim() || "#f59e0b";
+        const BG = getComputedStyle(document.documentElement).getPropertyValue("--bg-dark").trim() || "#1e1b4b";
+        const PRIMARY = getComputedStyle(document.documentElement).getPropertyValue("--primary").trim() || "#f97316";
+        const ACCENT = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim() || "#facc15";
 
         // Star parameters
         const STAR_COUNT = prefersReduced ? 120 : 220;
@@ -442,12 +493,11 @@
           return {
             sx: s.x * w * 0.5 * scale + cx,
             sy: s.y * h * 0.5 * scale + cy,
-            sr: s.r * scale * 1.2
+            sr: s.r * scale * 1.2,
           };
         }
 
         function drawBackground() {
-          // Soft vignette fill
           ctx.clearRect(0, 0, w, h);
           ctx.fillStyle = BG;
           ctx.fillRect(0, 0, w, h);
@@ -455,24 +505,19 @@
 
         function draw() {
           drawBackground();
-
-          // Optionally connect near neighbors for a faint "depth grid" feel
-          // Keep it subtle for performance and clarity
           for (let i = 0; i < stars.length; i++) {
             const s = stars[i];
             const p = project(s);
 
-            // Skip if off-screen
-            if (p.sx < -50 || p.sx > w + 50 || p.sy < -50 || p.sy > h + 50) continue;
+            if (p.sx < -50 || p.sx > w + 50 || p.sy < -50 || p.sy > h + 50)
+              continue;
 
-            // Dot
             ctx.beginPath();
             ctx.fillStyle = s.c;
-            ctx.globalAlpha = Math.min(0.9, 0.4 + (1 - s.z)); // nearer -> more opaque
+            ctx.globalAlpha = Math.min(0.9, 0.4 + (1 - s.z));
             ctx.arc(p.sx, p.sy, Math.max(0.6, p.sr), 0, Math.PI * 2);
             ctx.fill();
 
-            // Very subtle trailing line to suggest motion
             if (!prefersReduced) {
               ctx.beginPath();
               ctx.strokeStyle = s.c;
@@ -486,12 +531,10 @@
         }
 
         function step(t) {
-          // Update stars
           for (let i = 0; i < stars.length; i++) {
             const s = stars[i];
             s.z -= SPEED;
             if (s.z <= 0.02) {
-              // Reset far away to loop forward
               s.x = rand(-1, 1);
               s.y = rand(-1, 1);
               s.z = 1;
@@ -499,7 +542,6 @@
               s.r = rand(0.8, 1.6);
             }
           }
-
           draw();
           rafId = requestAnimationFrame(step);
         }
@@ -518,14 +560,16 @@
           rafId = null;
         }
 
-        window.addEventListener("resize", () => {
-          resize();
-          // redraw on resize for crispness
-          draw();
-        }, { passive: true });
+        window.addEventListener(
+          "resize",
+          () => {
+            resize();
+            draw();
+          },
+          { passive: true }
+        );
 
         start();
-        // Clean up if needed (for SPA scenarios). Kept here for completeness.
         window.addEventListener("beforeunload", stop);
       })();
     </script>
