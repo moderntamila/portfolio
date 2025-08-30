@@ -1,0 +1,533 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .gallery img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>🌿 My Portfolio</h1>
+
+  <div class="gallery" id="gallery"></div>
+
+  <script>
+    const totalImages = 41; // number of images in your folder
+    const gallery = document.getElementById("gallery");
+
+    for (let i = 1; i <= totalImages; i++) {
+      const img = document.createElement("img");
+      img.src = `images/${i}.png`;  // image path
+      img.alt = `Page ${i}`;
+      gallery.appendChild(img);
+    }
+  </script>
+</body>
+</html> -->
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .gallery img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      /* Enhanced styles below */
+      background-color: white;
+      border: 2px dashed #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌿 My Portfolio</h1>
+
+  <div class="gallery" id="gallery"></div>
+
+  <script>
+    const totalImages = 41; // number of images in your folder
+    const gallery = document.getElementById("gallery");
+
+    for (let i = 1; i <= totalImages; i++) {
+      const img = document.createElement("img");
+      img.src = `images/${i}.png`; // image path
+      img.alt = `Page ${i}`;
+      gallery.appendChild(img);
+    }
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Page background with 3D gradient effect */
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e0f7fa, #80deea, #4dd0e1, #26c6da);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      text-align: center;
+    }
+
+    /* Gradient animation */
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Title */
+    h1 {
+      margin: 0;
+      padding: 20px;
+      font-size: 2.5em;
+      color: #ffffff;
+      background: #004d40;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 4px solid #00e676;
+    }
+
+    /* Gallery layout */
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding: 30px;
+    }
+
+    /* Image styling */
+    .gallery img {
+      max-width: 85%;
+      height: auto;
+      border-radius: 12px;
+      border: 3px solid #ffffff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Hover effect */
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <h1>🌿 My Portfolio</h1>
+
+  <div class="gallery" id="gallery"></div>
+
+  <script>
+    const totalImages = 43; // update to your total images
+    const gallery = document.getElementById("gallery");
+
+    for (let i = 1; i <= totalImages; i++) {
+      const img = document.createElement("img");
+      img.src = `images/${i}.png`; // image path
+      img.alt = `Page ${i}`;
+      gallery.appendChild(img);
+    }
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Tamilselvan Portfolio</title>
+    <meta name="description" content="Tamilselvan Portfolio Gallery" />
+    <style>
+      :root {
+        /* Color palette (5 total) */
+        --primary: #14b8a6; /* teal-500 */
+        --accent: #f59e0b;  /* amber-500 */
+        --bg-dark: #0f172a; /* slate-900 */
+        --text-light: #e2e8f0; /* slate-200 */
+        --white: #ffffff;
+      }
+
+      /* Reset and base */
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text-light);
+        background: var(--bg-dark);
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* 3D background canvas */
+      #bg {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: var(--bg-dark);
+        display: block;
+      }
+
+      /* Layout container */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 24px 16px;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.75rem, 2.2vw + 1rem, 2.5rem);
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: 0.3px;
+        text-wrap: balance;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+      }
+
+      .title-accent {
+        width: 72px;
+        height: 4px;
+        background: var(--accent);
+        border-radius: 999px;
+      }
+
+      .subtitle {
+        margin: 0;
+        font-size: 0.95rem;
+        opacity: 0.9;
+      }
+
+      /* Gallery card wrapper (adds clear border and separation) */
+      .gallery-wrap {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        padding: 16px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        backdrop-filter: blur(6px);
+      }
+
+      /* Responsive gallery grid */
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      @media (min-width: 640px) {
+        .gallery { grid-template-columns: repeat(2, 1fr); }
+      }
+      @media (min-width: 1024px) {
+        .gallery { grid-template-columns: repeat(3, 1fr); }
+      }
+
+      /* Individual image item */
+      .item {
+        background: var(--white);
+        border: 2px solid rgba(20, 184, 166, 0.25); /* primary, subtle */
+        border-radius: 12px;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+        overflow: hidden;
+        transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+      }
+      .item:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 28px rgba(0,0,0,0.28);
+        border-color: var(--primary);
+      }
+      .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      /* Footer note */
+      footer {
+        text-align: center;
+        margin: 20px 0 8px;
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      /* Motion safety */
+      @media (prefers-reduced-motion: reduce) {
+        .item,
+        .item:hover {
+          transform: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+     3D background 
+    <canvas id="bg" aria-hidden="true"></canvas>
+
+    <main class="container" role="main">
+      <header>
+        <h1>🌿 Tamilselvan Portfolio</h1>
+        <div class="title-accent" aria-hidden="true"></div>
+        <p class="subtitle">Selected works and pages preview</p>
+      </header>
+
+       Gallery with clear border wrapper 
+      <section class="gallery-wrap" aria-label="Portfolio Gallery">
+        <div class="gallery" id="gallery"></div>
+      </section>
+
+      <footer>© <span id="year"></span> Tamilselvan. All rights reserved.</footer>
+    </main>
+
+    <script>
+      // ----------------------------
+      // Portfolio images (1..41)
+      // ----------------------------
+      const totalImages = 41; // number of images in your folder
+      const gallery = document.getElementById("gallery");
+
+      for (let i = 1; i <= totalImages; i++) {
+        const wrapper = document.createElement("div");
+        wrapper.className = "item";
+
+        const img = document.createElement("img");
+        img.src = `images/${i}.png`;
+        img.alt = `Page ${i}`;
+        img.loading = "lazy";
+        img.decoding = "async";
+        img.onerror = () => {
+          // Hide card if image is missing
+          wrapper.style.display = "none";
+        };
+
+        wrapper.appendChild(img);
+        gallery.appendChild(wrapper);
+      }
+
+      // Footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // ----------------------------
+      // Lightweight 3D starfield background
+      // ----------------------------
+      (function initStarfield() {
+        const canvas = document.getElementById("bg");
+        const ctx = canvas.getContext("2d", { alpha: true });
+        const DPR = Math.max(1, Math.min(window.devicePixelRatio || 1, 2));
+
+        let w = 0, h = 0, cx = 0, cy = 0;
+        let rafId = null;
+        const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        // Colors
+        const BG = getComputedStyle(document.documentElement).getPropertyValue("--bg-dark").trim() || "#0f172a";
+        const PRIMARY = getComputedStyle(document.documentElement).getPropertyValue("--primary").trim() || "#14b8a6";
+        const ACCENT = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim() || "#f59e0b";
+
+        // Star parameters
+        const STAR_COUNT = prefersReduced ? 120 : 220;
+        const FOV = 300; // virtual camera field-of-view
+        const SPEED = prefersReduced ? 0.0008 : 0.0016;
+
+        let stars = [];
+
+        function resize() {
+          w = canvas.clientWidth = window.innerWidth;
+          h = canvas.clientHeight = window.innerHeight;
+          canvas.width = Math.floor(w * DPR);
+          canvas.height = Math.floor(h * DPR);
+          ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+          cx = w / 2;
+          cy = h / 2;
+        }
+
+        function rand(min, max) {
+          return Math.random() * (max - min) + min;
+        }
+
+        function createStars() {
+          stars = new Array(STAR_COUNT).fill(0).map(() => ({
+            x: rand(-1, 1),
+            y: rand(-1, 1),
+            z: rand(0.2, 1), // depth
+            c: Math.random() < 0.12 ? ACCENT : PRIMARY, // some accent bits
+            r: rand(0.8, 1.6), // base radius (scaled by perspective)
+          }));
+        }
+
+        function project(s) {
+          const scale = FOV / (FOV + s.z * 600);
+          return {
+            sx: s.x * w * 0.5 * scale + cx,
+            sy: s.y * h * 0.5 * scale + cy,
+            sr: s.r * scale * 1.2
+          };
+        }
+
+        function drawBackground() {
+          // Soft vignette fill
+          ctx.clearRect(0, 0, w, h);
+          ctx.fillStyle = BG;
+          ctx.fillRect(0, 0, w, h);
+        }
+
+        function draw() {
+          drawBackground();
+
+          // Optionally connect near neighbors for a faint "depth grid" feel
+          // Keep it subtle for performance and clarity
+          for (let i = 0; i < stars.length; i++) {
+            const s = stars[i];
+            const p = project(s);
+
+            // Skip if off-screen
+            if (p.sx < -50 || p.sx > w + 50 || p.sy < -50 || p.sy > h + 50) continue;
+
+            // Dot
+            ctx.beginPath();
+            ctx.fillStyle = s.c;
+            ctx.globalAlpha = Math.min(0.9, 0.4 + (1 - s.z)); // nearer -> more opaque
+            ctx.arc(p.sx, p.sy, Math.max(0.6, p.sr), 0, Math.PI * 2);
+            ctx.fill();
+
+            // Very subtle trailing line to suggest motion
+            if (!prefersReduced) {
+              ctx.beginPath();
+              ctx.strokeStyle = s.c;
+              ctx.globalAlpha = 0.15 * (1 - s.z);
+              ctx.moveTo(p.sx, p.sy);
+              ctx.lineTo(p.sx - 6, p.sy - 6);
+              ctx.stroke();
+            }
+          }
+          ctx.globalAlpha = 1;
+        }
+
+        function step(t) {
+          // Update stars
+          for (let i = 0; i < stars.length; i++) {
+            const s = stars[i];
+            s.z -= SPEED;
+            if (s.z <= 0.02) {
+              // Reset far away to loop forward
+              s.x = rand(-1, 1);
+              s.y = rand(-1, 1);
+              s.z = 1;
+              s.c = Math.random() < 0.12 ? ACCENT : PRIMARY;
+              s.r = rand(0.8, 1.6);
+            }
+          }
+
+          draw();
+          rafId = requestAnimationFrame(step);
+        }
+
+        function start() {
+          resize();
+          createStars();
+          draw();
+          if (!prefersReduced) {
+            rafId = requestAnimationFrame(step);
+          }
+        }
+
+        function stop() {
+          if (rafId) cancelAnimationFrame(rafId);
+          rafId = null;
+        }
+
+        window.addEventListener("resize", () => {
+          resize();
+          // redraw on resize for crispness
+          draw();
+        }, { passive: true });
+
+        start();
+        // Clean up if needed (for SPA scenarios). Kept here for completeness.
+        window.addEventListener("beforeunload", stop);
+      })();
+    </script>
+  </body>
+</html>
